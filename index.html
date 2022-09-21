@@ -3,18 +3,64 @@
     <head id="header">
         <!-- Connects base.css to base.html -->
         <link href="./styles.css" rel="stylesheet" />
-        <!-- Connects base.js to base.html -->
-        <script src="script.js"></script>
     </head>
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <div>
-            <p class="text">This is the beginning of Mentored!</p>
-            <p class="text">I am super excited!!!</p>
-        </div>
     <body id="body">
-        <div class="flex-container">
+
+        <!-- Site header! -->
+        <h1>SONG GENERATOR 3000</h1>
+
+        <!-- Site description! -->
+        <div>
+            <p class="text">Musically ambitious but creatively lacking?</p>
+            <p class="text">Then check out this cool tool that we made for you!</p>
+            <p class="text">With just a few clicks, our code’ll get cracking</p>
+            <p class="text">And you’ll find that you can make great music, too! 😎👍</p>
+        </div>
+
+        <!-- Dropdown form for key and chord progression. -->
+        <form id="the-form" class="form" method="post">
+            <label>Choose a key signature!</label>
+            <select id="key" type="key-signature" name="key" required="true">
+                <option value=""> </option>
+                <option value="key-of-c">C</option>
+                <option value="key-of-c#/db">C♯/D♭</option>
+                <option value="key-of-d">D</option>
+                <option value="key-of-d#/eb">D♯/E♭</option>
+                <option value="key-of-e">E</option>
+                <option value="key-of-f">F</option>
+                <option value="key-of-f#/gb">F♯/G♭</option>
+                <option value="key-of-g">G</option>
+                <option value="key-of-g#/ab">G♯/A♭</option>
+                <option value="key-of-a">A</option>
+                <option value="key-of-a#/bb">A♯/B♭</option>
+                <option value="key-of-b">B</option>
+            </select>
+            <br><br>
+            
+            <label>Choose a chord progression!</label>
+            <select id="chords" type="chords" name="chords" required="true">
+            <option value=""> </option>
+            <optgroup label="Moods">
+                <option value="basic">Basic</option> <!-- I, V, vi, I, -->
+                <option value="bittersweet">Bittersweet</option> <!-- I, IV, iv, I -->
+                <option value="dramatic">Dramatic</option> <!-- vi, IV, I, V -->
+                <option value="happy">Happy</option> <!-- I, IV, V, V -->
+            </optgroup>
+            <optgroup label="Artists(!!!)">
+                <option value="radiohead">Radiohead</option> <!-- I, vi,  IV,  iv -->
+                <option value="tay-tay">Taylor Swift</option> <!--  I, vi, IV, V -->
+                <option value="lorde-n-saviour">Lorde</option> <!--  I, IV, iii, V -->
+                <option value="idk-my-name">Grace Vanderwaal</option> <!-- I, IV, vi, VII -->
+                <option value="middle-school">Ed Sheeran</option> <!-- I, V, II, iii -->
+                <option value="iconic">Troye Sivan</option> <!-- V, iii, vi, II -->
+            </optgroup>
+        </select>
+        <br><br>
+
+            <input type="submit" value="GENERATE YOUR NEXT BIG HIT"/>
+          </form>          
+
+        <!-- <div class="flex-container">
             <a href="https://codebase.berkeley.edu">Press here to go to Codebase Website</a>
             <img class="image" src="https://codebase.berkeley.edu/static/238f7857e162c32b372ec34e5e68b6ff/8dcbd/cb-logo-black.png">
             <img class="image" src="https://larynqi.com/assets/img/denero-crop-2.PNG">
@@ -44,7 +90,9 @@
                 <input type="submit" value="Submit"/>
             </form>
     </center>
-    </body>
+    </body> -->
+    <!-- Connects base.js to base.html -->
+    <script src="script.js"></script>
 </html>
 
         
