@@ -6,6 +6,10 @@
 
 }
 
+#result{
+    display: none;
+}
+
 .form {
     margin: 15px;
 }
