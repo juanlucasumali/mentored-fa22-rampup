@@ -1,11 +1,41 @@
+const A_chord = new Audio("sounds/A_chord.mp3");
+const Am_chord = new Audio("sounds/Am_chord.mp3");
+const Ab_chord = new Audio("sounds/Ab_chord.mp3");
+const Abm_chord = new Audio("sounds/Abm_chord.mp3");
+const B_chord = new Audio("sounds/B_chord.mp3");
+const Bm_chord = new Audio("sounds/Bm_chord.mp3");
+const Bb_chord = new Audio("sounds/Bb_chord.mp3");
+const Bbm_chord = new Audio("sounds/Bbm_chord.mp3");
+const C_chord = new Audio("sounds/C_chord.mp3");
+const Cm_chord = new Audio("sounds/Cm_chord.mp3");
+const Cb_chord = new Audio("sounds/Cb_chord.mp3");
+const Cbm_chord = new Audio("sounds/Cbm_chord.mp3");
+const D_chord = new Audio("sounds/D_chord.mp3");
+const Dm_chord = new Audio("sounds/Dm_chord.mp3");
+const Db_chord = new Audio("sounds/Db_chord.mp3");
+const Dbm_chord = new Audio("sounds/Dbm_chord.mp3");
+const E_chord = new Audio("sounds/E_chord.mp3");
+const Em_chord = new Audio("sounds/Em_chord.mp3");
+const Eb_chord = new Audio("sounds/Eb_chord.mp3");
+const Ebm_chord = new Audio("sounds/Ebm_chord.mp3");
+const F_chord = new Audio("sounds/F_chord.mp3");
+const Fm_chord = new Audio("sounds/Fm_chord.mp3");
+const Fb_chord = new Audio("sounds/Fb_chord.mp3");
+const Fbm_chord = new Audio("sounds/Fbm_chord.mp3");
+const G_chord = new Audio("sounds/G_chord.mp3");
+const Gm_chord = new Audio("sounds/Gm_chord.mp3");
+const Gb_chord = new Audio("sounds/Gb_chord.mp3");
+const Gbm_chord = new Audio("sounds/Gbm_chord.mp3");
 
+const playSound = audio => {
+  const clone = audio.cloneNode();
+  clone.play();
+};
 
 function change(id1, id2) {
   document.getElementById(id1).style.display="none";
   document.getElementById(id2).style.display="block";
 }
-// Initializes the form variable, to be used later when pulling user input
-var form = document.getElementById("the-form");
 
 // All the scales (If len(element) == 2, element % 10 -> concatenate 'm' to the element )
 var scales_dict = {
@@ -37,6 +67,235 @@ var chords_dict = {
   "key-of-b":["B", "C#", "D#", "E", "F#", "G#", "A#"]
 };
 
+const A_chordKey = document.querySelector(".A_chord-key");
+const playA = () => {
+  playSound(A_chord);
+  A_chordKey.classList.add("active");
+  setTimeout(() => A_chordKey.classList.remove("active"), 200);
+};
+A_chordKey.addEventListener("submit", playA, true);
+
+const Am_chordKey = document.querySelector(".Am_chord-key");
+const playAm = () => {
+  playSound(Am_chord);
+  Am_chordKey.classList.add("active");
+  setTimeout(() => Am_chordKey.classList.remove("active"), 200);
+};
+Am_chordKey.addEventListener("submit", playAm, true);
+
+const Ab_chordKey = document.querySelector(".Ab_chord-key");
+const playAb = () => {
+  playSound(Ab_chord);
+  Ab_chordKey.classList.add("active");
+  setTimeout(() => Ab_chordKey.classList.remove("active"), 200);
+};
+Ab_chordKey.addEventListener("submit", playAb, true);
+
+const Abm_chordKey = document.querySelector(".Abm_chord-key");
+const playAbm = () => {
+  playSound(Abm_chord);
+  Abm_chordKey.classList.add("active");
+  setTimeout(() => Abm_chordKey.classList.remove("active"), 200);
+};
+Abm_chordKey.addEventListener("submit", playAbm, true);
+
+const B_chordKey = document.querySelector(".B_chord-key");
+const playB = () => {
+  playSound(B_chord);
+  B_chordKey.classList.add("active");
+  setTimeout(() => B_chordKey.classList.remove("active"), 200);
+};
+B_chordKey.addEventListener("submit", playB, true);
+
+const Bm_chordKey = document.querySelector(".Bm_chord-key");
+const playBm = () => {
+  playSound(Bm_chord);
+  Bm_chordKey.classList.add("active");
+  setTimeout(() => Bm_chordKey.classList.remove("active"), 200);
+};
+Bm_chordKey.addEventListener("submit", playBm, true);
+
+const Bb_chordKey = document.querySelector(".Bb_chord-key");
+const playBb = () => {
+  playSound(Bb_chord);
+  Bb_chordKey.classList.add("active");
+  setTimeout(() => Bb_chordKey.classList.remove("active"), 200);
+};
+Bb_chordKey.addEventListener("submit", playBb, true);
+
+const Bbm_chordKey = document.querySelector(".Bbm_chord-key");
+const playBbm = () => {
+  playSound(Bbm_chord);
+  Bbm_chordKey.classList.add("active");
+  setTimeout(() => Bbm_chordKey.classList.remove("active"), 200);
+};
+Bbm_chordKey.addEventListener("submit", playBbm, true);
+
+const C_chordKey = document.querySelector(".C_chord-key");
+const playC = () => {
+  playSound(C_chord);
+  C_chordKey.classList.add("active");
+  setTimeout(() => C_chordKey.classList.remove("active"), 200);
+};
+C_chordKey.addEventListener("submit", playC, true);
+
+const Cm_chordKey = document.querySelector(".Cm_chord-key");
+const playCm = () => {
+  playSound(Cm_chord);
+  Cm_chordKey.classList.add("active");
+  setTimeout(() => Cm_chordKey.classList.remove("active"), 200);
+};
+Cm_chordKey.addEventListener("submit", playCm, true);
+
+const Cb_chordKey = document.querySelector(".Cb_chord-key");
+const playCb = () => {
+  playSound(Cb_chord);
+  Cb_chordKey.classList.add("active");
+  setTimeout(() => Cb_chordKey.classList.remove("active"), 200);
+};
+Cb_chordKey.addEventListener("submit", playCb, true);
+
+const Cbm_chordKey = document.querySelector(".Cbm_chord-key");
+const playCbm = () => {
+  playSound(Cbm_chord);
+  Cbm_chordKey.classList.add("active");
+  setTimeout(() => Cbm_chordKey.classList.remove("active"), 200);
+};
+Cbm_chordKey.addEventListener("submit", playCbm, true);
+
+const D_chordKey = document.querySelector(".D_chord-key");
+const playD = () => {
+  playSound(D_chord);
+  D_chordKey.classList.add("active");
+  setTimeout(() => D_chordKey.classList.remove("active"), 200);
+};
+D_chordKey.addEventListener("submit", playD, true);
+
+const Dm_chordKey = document.querySelector(".Dm_chord-key");
+const playDm = () => {
+  playSound(Dm_chord);
+  Dm_chordKey.classList.add("active");
+  setTimeout(() => Dm_chordKey.classList.remove("active"), 200);
+};
+Dm_chordKey.addEventListener("submit", playDm, true);
+
+const Db_chordKey = document.querySelector(".Db_chord-key");
+const playDb = () => {
+  playSound(Db_chord);
+  Db_chordKey.classList.add("active");
+  setTimeout(() => Db_chordKey.classList.remove("active"), 200);
+};
+Db_chordKey.addEventListener("submit", playDb, true);
+
+const Dbm_chordKey = document.querySelector(".Dbm_chord-key");
+const playDbm = () => {
+  playSound(Dbm_chord);
+  Dbm_chordKey.classList.add("active");
+  setTimeout(() => Dbm_chordKey.classList.remove("active"), 200);
+};
+Dbm_chordKey.addEventListener("submit", playDbm, true);
+
+const E_chordKey = document.querySelector(".E_chord-key");
+const playE = () => {
+  playSound(E_chord);
+  E_chordKey.classList.add("active");
+  setTimeout(() => E_chordKey.classList.remove("active"), 200);
+};
+E_chordKey.addEventListener("submit", playE, true);
+
+const Em_chordKey = document.querySelector(".Em_chord-key");
+const playEm = () => {
+  playSound(Em_chord);
+  Em_chordKey.classList.add("active");
+  setTimeout(() => Em_chordKey.classList.remove("active"), 200);
+};
+Em_chordKey.addEventListener("submit", playEm, true);
+
+const Eb_chordKey = document.querySelector(".Eb_chord-key");
+const playEb = () => {
+  playSound(Eb_chord);
+  Eb_chordKey.classList.add("active");
+  setTimeout(() => Eb_chordKey.classList.remove("active"), 200);
+};
+Eb_chordKey.addEventListener("submit", playEb, true);
+
+const Ebm_chordKey = document.querySelector(".Ebm_chord-key");
+const playEbm = () => {
+  playSound(Ebm_chord);
+  Ebm_chordKey.classList.add("active");
+  setTimeout(() => Ebm_chordKey.classList.remove("active"), 200);
+};
+Ebm_chordKey.addEventListener("submit", playEbm, true);
+
+const F_chordKey = document.querySelector(".F_chord-key");
+const playF = () => {
+  playSound(F_chord);
+  F_chordKey.classList.add("active");
+  setTimeout(() => F_chordKey.classList.remove("active"), 200);
+};
+F_chordKey.addEventListener("submit", playF, true);
+
+const Fm_chordKey = document.querySelector(".Fm_chord-key");
+const playFm = () => {
+  playSound(Fm_chord);
+  Fm_chordKey.classList.add("active");
+  setTimeout(() => Fm_chordKey.classList.remove("active"), 200);
+};
+Fm_chordKey.addEventListener("submit", playFm, true);
+
+const Fb_chordKey = document.querySelector(".Fb_chord-key");
+const playFb = () => {
+  playSound(Fb_chord);
+  Fb_chordKey.classList.add("active");
+  setTimeout(() => Fb_chordKey.classList.remove("active"), 200);
+};
+Fb_chordKey.addEventListener("submit", playFb, true);
+
+const Fbm_chordKey = document.querySelector(".Fbm_chord-key");
+const playFbm = () => {
+  playSound(Fbm_chord);
+  Fbm_chordKey.classList.add("active");
+  setTimeout(() => Fbm_chordKey.classList.remove("active"), 200);
+};
+Fbm_chordKey.addEventListener("submit", playFbm, true);
+
+const G_chordKey = document.querySelector(".G_chord-key");
+const playG = () => {
+  playSound(G_chord);
+  G_chordKey.classList.add("active");
+  setTimeout(() => G_chordKey.classList.remove("active"), 200);
+};
+G_chordKey.addEventListener("submit", playG, true);
+
+const Gm_chordKey = document.querySelector(".Gm_chord-key");
+const playGm = () => {
+  playSound(Gm_chord);
+  Gm_chordKey.classList.add("active");
+  setTimeout(() => Gm_chordKey.classList.remove("active"), 200);
+};
+Gm_chordKey.addEventListener("submit", playGm, true);
+
+const Gb_chordKey = document.querySelector(".Gb_chord-key");
+const playGb = () => {
+  playSound(Gb_chord);
+  Gb_chordKey.classList.add("active");
+  setTimeout(() => Gb_chordKey.classList.remove("active"), 200);
+};
+Gb_chordKey.addEventListener("submit", playGb, true);
+
+const Gbm_chordKey = document.querySelector(".Gbm_chord-key");
+const playGbm = () => {
+  playSound(Gbm_chord);
+  Gbm_chordKey.classList.add("active");
+  setTimeout(() => Gbm_chordKey.classList.remove("active"), 200);
+};
+Gbm_chordKey.addEventListener("submit", playGbm, true);
+
+
+// Initializes the form variable, to be used later when pulling user input
+var form = document.getElementById("the-form");
+
+let chord_funcs = []
 // Initializes the submit function with the event parameter; this'll be the function that will pull
 // user-inputted elements from the form.
 function submit(event) {
@@ -51,9 +310,24 @@ function submit(event) {
     }
     } 
     document.getElementById("the-progression").innerHTML = progression;
+
+    for (let i = 0; i < 4; i++) {
+      chord_funcs.push('play' + progression[i]);
+    }
+
     change("home-page", "result");
-    alert('Key: ' + key.value.toString() + '\nChords: ' + chords.value.toString() + '\nProgression: ' + chords_dict[key.value.toString()] + '\nNumerals: ' + scales_dict[chords.value.toString()] );
+
     event.preventDefault();
 }
 // 'Listens' for when the user submits the form, then calls the submit(event) function.
 form.addEventListener("submit", submit, true)
+
+var start_playing = document.getElementById("play-chords");
+function play_chords(event) {
+    setTimeout(eval(chord_funcs[0]), 5);
+    setTimeout(eval(chord_funcs[1]), 2450);
+    setTimeout(eval(chord_funcs[2]), 4825);
+    setTimeout(eval(chord_funcs[3]), 7230);
+  event.preventDefault();
+}
+start_playing.addEventListener("click", play_chords, true);

@@ -7,12 +7,13 @@
 
     <div id="home-page">
     <body id="body">
-
+        <center>
+        <div id="title-text">
         <!-- Site header! -->
-        <h1>SONG GENERATOR 3000</h1>
+        <h1 id="page-title">song generator 3000</h1>
 
         <!-- Site description! -->
-        <div>
+        <div id="description">
             <p class="text">Musically ambitious but creatively lacking?</p>
             <p class="text">Then check out this cool tool that we made for you!</p>
             <p class="text">With just a few clicks, our code’ll get cracking</p>
@@ -51,22 +52,66 @@
             <optgroup label="Artists(!!!)">
                 <option value="radiohead">Radiohead</option> <!-- I, vi,  IV,  iv -->
                 <option value="tay-tay">Taylor Swift</option> <!--  I, vi, IV, V -->
-                <option value="lorde-n-saviour">Lorde</option> <!--  I, IV, vi, iv -->
+                <option value="lorde-n-saviour">Lorde</option> <!--  I, vi, IV, V -->
                 <option value="idk-my-name">Grace Vanderwaal</option> <!-- I, IV, vi, VII -->
                 <option value="iconic">Troye Sivan</option> <!-- V, iii, vi, II -->
             </optgroup>
         </select>
         <br><br>
-
-            <input type="submit" value="GENERATE YOUR NEXT BIG HIT"/>
+            <div id="generate-box">
+            <input id="generate" type="submit" value="GENERATE YOUR NEXT BIG HIT"/>
+            </div>
           </form>          
-        </div>
 
+        </div>
+    </div>
+
+    </center>
         <div id="result">
             <h1 id="the-progression">
                 Yo.
             </h1>
+
+            <div class="interactive">
+                <center>
+                    <button class="start_button" id="play-chords" >Play!</button>
+                </center>
+
+            </div>
+
         </div>
+
+        <div class="piano">
+            <button class="white-key A_chord-key"></button>
+            <button class="black-key Am_chord-key"></button>
+            <button class="white-key Ab_chord-key"></button>
+            <button class="black-key Abm_chord-key"></button>
+            <button class="white-key B_chord-key"></button>
+            <button class="black-key Bm_chord-key"></button>
+            <button class="white-key Bb_chord-key"></button>
+            <button class="black-key Bbm_chord-key"></button>
+            <button class="white-key C_chord-key"></button>
+            <button class="black-key Cm_chord-key"></button>
+            <button class="white-key Cb_chord-key"></button>
+            <button class="black-key Cbm_chord-key"></button>
+            <button class="white-key D_chord-key"></button>
+            <button class="black-key Dm_chord-key"></button>
+            <button class="white-key Db_chord-key"></button>
+            <button class="black-key Dbm_chord-key"></button>
+            <button class="white-key E_chord-key"></button>
+            <button class="black-key Em_chord-key"></button>
+            <button class="white-key Eb_chord-key"></button>
+            <button class="black-key Ebm_chord-key"></button>
+            <button class="white-key F_chord-key"></button>
+            <button class="black-key Fm_chord-key"></button>
+            <button class="white-key Fb_chord-key"></button>
+            <button class="black-key Fbm_chord-key"></button>
+            <button class="white-key G_chord-key"></button>
+            <button class="black-key Gm_chord-key"></button>
+            <button class="white-key Gb_chord-key"></button>
+            <button class="black-key Gbm_chord-key"></button>
+          </div>
+
 
         <!-- <div class="flex-container">
             <a href="https://codebase.berkeley.edu">Press here to go to Codebase Website</a>

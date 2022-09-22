@@ -10,6 +10,30 @@
     display: none;
 }
 
+#page-title {
+    color:white;
+    font-family: monospace;
+}
+
+#title-text {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#home-page {
+    top:50%;
+    left:50%;
+    transform: (-50%, -50%);
+}
+
+#page-title {
+    font-size:8vh;
+}
+
+.piano{
+    display: none;
+}
+
 .form {
     margin: 15px;
 }
@@ -22,6 +46,39 @@
     height: 10vw;
 }
 
+#description {
+    padding-bottom: 10px;
+}
+
+#home-page {
+    padding: 170px;
+}
+
+#the-form {
+    padding:10px;
+    font-family: monospace;
+    color:white;
+    font-style: italic;
+}
+
+#result {
+    text-align: center;
+    padding: 350px;
+}
+
+#generate {
+    font-family: monospace;
+    font-size: larger;
+}
+
+#the-progression{
+    font-family: monospace;
+}
+
+#generate-box {
+    padding-top: 10px;
+}
+
 .button {
     background-color: aliceblue;
     outline: black;
@@ -31,11 +88,24 @@
 }
 
 .text{
-    color:red;
+    color:white;
     font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
 }
 
 /* #name to define css of ids */
 #iframe {
     width:50vw;
+}
+
+
+body{
+    background-image: url('https://c.tenor.com/CCky8rHzIecAAAAd/80s-vaporwave.gifhttp://i.stack.imgur.com/kx8MT.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
 }
