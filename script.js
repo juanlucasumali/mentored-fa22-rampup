@@ -9,15 +9,16 @@ var form = document.getElementById("the-form");
 
 // All the scales (If len(element) == 2, element % 10 -> concatenate 'm' to the element )
 var scales_dict = {
-  "radiohead":[1, 96,  4,  94],
-  "tay-tay":[1, 96, 4, 5],
-  "lorde-n-saviour":[1, 4, 93, 5],
-  "idk-my-name":[1, 4, 96, 7],
-  "middle-school":[1, 5, 2, 93],
-  "basic":[1, 5, 96, 1],
-  "bittersweet":[1, 4, 94, 1],
-  "dramatic":[96, 4, 1, 5],
-  "happy":[1, 4, 5, 5]
+  "radiohead":[0, 95,  3,  93],
+  "tay-tay":[0, 95, 3, 4],
+  "lorde-n-saviour":[0, 3, 95, 93],
+  "idk-my-name":[0, 3, 95, 4],
+  "iconic":[4, 92, 95, 1],
+
+  "basic":[0, 4, 95, 3],
+  "bittersweet":[0, 3, 93, 0],
+  "hopeful":[95, 3, 0, 4],
+  "happy":[0, 3, 4, 4]
 };
 
 // All of the chord progressions (Make the chord progressions easier for the computer to read)
