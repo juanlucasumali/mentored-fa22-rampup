@@ -39,9 +39,9 @@ function change(id1, id2) {
 
 // All the scales (If len(element) == 2, element % 10 -> concatenate 'm' to the element )
 var scales_dict = {
-  "radiohead":[0, 95,  3,  93],
+  "warmstop":[0, 95,  3,  93],
   "tay-tay":[0, 95, 3, 4],
-  "lorde-n-saviour":[0, 3, 95, 93],
+  "satellite-foot":[0, 93, 95, 93],
   "idk-my-name":[0, 3, 95, 4],
   "iconic":[4, 92, 95, 1],
 
@@ -253,7 +253,7 @@ function submit(event) {
       progression.push(chords_dict[key.value.toString()][scales_dict[chords.value.toString()][i]]);
     }
     } 
-    document.getElementById("the-progression").innerHTML = progression;
+    document.getElementById("the-progression").innerHTML = progression.join(" ");
 
     for (let i = 0; i < 4; i++) {
       chord_funcs.push('play' + progression[i]);

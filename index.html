@@ -12,20 +12,20 @@
         <div id="title-text">
         <!-- Site header! -->
         <h1 id="page-title">chord progression generator 3000</h1>
-
+        </div>
+        <div id="everything-else">
         <!-- Site description! -->
         <div id="description">
-            <p class="text">Musically ambitious but creatively lacking?</p>
-            <p class="text">Then check out this cool tool that we made for you!</p>
-            <p class="text">With just a few clicks, our code’ll get cracking</p>
-            <p class="text">And you’ll find that you can make great music, too! 😎👍</p>
+            <p class="text" id="first-line">Musically ambitious but creatively lacking?</p>
+            <p class="text" id="second-line">Then check out this cool tool that we made for you!</p>
+            <p class="text" id="third-line">With just a few clicks, our code’ll get cracking</p>
+            <p class="text" id="fourth-line">And you’ll find that you can make great music, too! 😎👍</p>
         </div>
 
         <!-- Dropdown form for key and chord progression. -->
         <form id="the-form" class="form" method="post">
-            <label>Choose a key signature!</label>
             <select id="key" type="key-signature" name="key" required="true">
-                <option value=""> </option>
+                <option value="" id="form-titles">choose a key: </option>
                 <option value="key-of-c">C</option>
                 <option value="key-of-c#/db">C♯/D♭</option>
                 <option value="key-of-d">D</option>
@@ -39,11 +39,9 @@
                 <option value="key-of-a#/bb">A♯/B♭</option>
                 <option value="key-of-b">B</option>
             </select>
-            <br><br>
             
-            <label>Choose a chord progression!</label>
             <select id="chords" type="chords" name="chords" required="true">
-            <option value=""> </option>
+            <option value="" id="form-titles">choose a viiiiiiibe: </option>
             <optgroup label="Moods">
                 <option value="basic">Basic</option> <!-- I, V, vi, I, -->
                 <option value="bittersweet">Bittersweet</option> <!-- I, IV, iv, I -->
@@ -51,9 +49,9 @@
                 <option value="happy">Happy</option> <!-- I, IV, V, V -->
             </optgroup>
             <optgroup label="Artists(!!!)">
-                <option value="radiohead">Radiohead</option> <!-- I, vi,  IV,  iv -->
+                <option value="warmstop">Coldplay</option> <!-- I, vi,  IV,  iv -->
                 <option value="tay-tay">Taylor Swift</option> <!--  I, vi, IV, V -->
-                <option value="lorde-n-saviour">Lorde</option> <!--  I, vi, IV, V -->
+                <option value="satellite-foot">Radiohead</option> <!--  I, vi, IV, V -->
                 <option value="idk-my-name">Grace Vanderwaal</option> <!-- I, IV, vi, VII -->
                 <option value="iconic">Troye Sivan</option> <!-- V, iii, vi, II -->
             </optgroup>
@@ -62,6 +60,7 @@
             <div id="generate-box">
             <input id="generate" type="submit" value="GENERATE YOUR NEXT BIG HIT"/>
             </div>
+        </div>
           </form>          
 
         </div>
@@ -75,8 +74,8 @@
 
             <div class="interactive" id="buttons_here">
                 <center>
-                    <button class="start_button"  id="play-chords" >Play</button>
-                    <button class="start_button"  id="refresh" >Back</button>
+                    <button class="start_button"  id="play-chords" >play</button>
+                    <button class="start_button"  id="refresh" >back</button>
                 </center>
 
             </div>

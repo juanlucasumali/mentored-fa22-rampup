@@ -6,6 +6,70 @@
 
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+#play-chords {
+    font-family: monospace;
+    color:white;
+    background-color:purple;
+    transition-duration: 0.4s;
+    padding: 1px 10px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-color: darkorchid;
+
+
+}
+
+#play-chords:hover {
+    font-family: monospace;
+    color:black;
+    background-color:white;
+    padding: 1px 10px;
+    margin: 4px 2px;
+    border-color: grey;
+}
+
+
+#refresh {
+    font-family: monospace;
+    color:white;
+    background-color:purple;
+    transition-duration: 0.4s;
+    padding: 1px 10px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-color: darkorchid;
+
+
+}
+
+#refresh:hover {
+    font-family: monospace;
+    color:black;
+    background-color:white;
+    padding: 1px 10px;
+    margin: 4px 2px;
+    border-color: grey;
+}
+
+
 #result{
     display: none;
 }
@@ -26,8 +90,70 @@
     transform: (-50%, -50%);
 }
 
+
 #page-title {
     font-size:50px;
+}
+
+#everything-else {
+    transition-duration: 0.2s;
+}
+
+#page-title:hover {
+    font-size:50px;
+    color:orange;
+}
+
+#first-line{
+    font-family: monospace;
+    color:white;
+    transition-duration: 0.2s;
+    font-size:larger
+}
+
+#first-line:hover{
+    font-family: monospace;
+    color:black;
+    font-size:larger
+}
+
+#second-line{
+    font-family: monospace;
+    color:white;
+    transition-duration: 0.2s;
+    font-size:larger
+}
+
+#second-line:hover{
+    font-family: monospace;
+    color:black;
+    font-size:larger
+}
+
+#third-line{
+    font-family: monospace;
+    color:white;
+    transition-duration: 0.2s;
+    font-size:larger
+}
+
+#third-line:hover{
+    font-family: monospace;
+    color:black;
+    font-size:larger
+}
+
+#fourth-line{
+    font-family: monospace;
+    color:white;
+    transition-duration: 0.2s;
+    font-size:larger
+}
+
+#fourth-line:hover{
+    font-family: monospace;
+    color:black;
+    font-size:larger
 }
 
 .piano{
@@ -47,6 +173,7 @@
 }
 
 #description {
+    padding-top: 5px;
     padding-bottom: 10px;
 }
 
@@ -54,11 +181,30 @@
     padding: 200px;
 }
 
+#key {
+    background-color: whitesmoke;
+    font-family: monospace;
+    padding: 2px;
+    text-align: center;
+}
+
+#chords {
+    background-color: whitesmoke;
+    font-family: monospace;
+    padding: 2px;
+    text-align: center;
+}
+
 #the-form {
     padding:10px;
     font-family: monospace;
     color:white;
     font-style: italic;
+}
+
+#form-titles {
+    text-align: center;
+    font-family: monospace;
 }
 
 #result {
@@ -69,11 +215,42 @@
 #generate {
     font-family: monospace;
     font-size: larger;
+    transition-duration: 0.4s;
+    color:white;
+    font-weight:200;
+    background-color:purple;
+    padding: 5px 22px;
+    margin: 4px 2px;
+    border-color:darkorchid;
+    border-width: 3px;
+}
+
+#generate:hover {
+    font-family: monospace;
+    font-size: larger;
+    font-weight: bolder;
+    color:black;
+    background-color:orange;
+    padding: 5px 22px;
+    margin: 4px 2px;
+    border-color:darkorange;
+    border-width: 3px;
 }
 
 #the-progression{
     font-family: monospace;
+    color:white;
+    transition-duration: 0.2s;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+#the-progression:hover{
+    font-family: monospace;
+    color:black;
+}
+
 
 #generate-box {
     padding-top: 10px;
@@ -107,6 +284,8 @@ body{
     background-image: url('https://c.tenor.com/CCky8rHzIecAAAAd/80s-vaporwave.gifhttp://i.stack.imgur.com/kx8MT.gif');
     background-size: cover;
     background-position:left;
+    background-position-x: -9px;
+    background-position-y: 2px;
     
     
     
