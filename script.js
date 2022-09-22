@@ -55,16 +55,16 @@ var scales_dict = {
 var chords_dict = {
   "key-of-c":["C", "D", "E", "F", "G", "A", "B"],
   "key-of-c#/db":["Db", "Eb", "Fb", "Gb", "Ab", "Bb", "Cb"],
-  "key-of-d":["D", "E", "F#", "G", "A", "B", "C#"],
+  "key-of-d":["D", "E", "F#", "G", "A", "B", "Db"],
   "key-of-d#/eb":["Eb", "F", "G", "Ab", "Bb", "C", "D"],
-  "key-of-e":["E", "F#", "G#", "A", "B", "C#", "D#"],
+  "key-of-e":["E", "Gb", "Ab", "A", "B", "Db", "Eb"],
   "key-of-f":["F", "G", "A", "Bb", "C", "D", "E"],
   "key-of-f#/gb":["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F"],
-  "key-of-g":["G", "A", "B", "C", "D", "E", "F#"],
+  "key-of-g":["G", "A", "B", "C", "D", "E", "Gb"],
   "key-of-g#/ab":["Ab", "Bb", "C", "Db", "Eb", "F", "G"],
-  "key-of-a":["A", "B", "C#", "D", "E", "F#", "G#"],
+  "key-of-a":["A", "B", "Db", "D", "E", "Gb", "Ab"],
   "key-of-a#/bb":["Bb", "C", "D", "Eb", "F", "G", "A"],
-  "key-of-b":["B", "C#", "D#", "E", "F#", "G#", "A#"]
+  "key-of-b":["B", "Db", "Eb", "E", "Gb", "Ab", "Bb"]
 };
 
 const A_chordKey = document.querySelector(".A_chord-key");
@@ -322,12 +322,25 @@ function submit(event) {
 // 'Listens' for when the user submits the form, then calls the submit(event) function.
 form.addEventListener("submit", submit, true)
 
+function man_click() {
+  start_playing.addEventListener("click", play_chords, true);
+  start_playing.click()
+}
+
 var start_playing = document.getElementById("play-chords");
 function play_chords(event) {
+  start_playing.removeEventListener("click", play_chords, true);
     setTimeout(eval(chord_funcs[0]), 5);
-    setTimeout(eval(chord_funcs[1]), 2450);
-    setTimeout(eval(chord_funcs[2]), 4825);
-    setTimeout(eval(chord_funcs[3]), 7230);
+    setTimeout(eval(chord_funcs[1]), 2400);
+    setTimeout(eval(chord_funcs[2]), 4805);
+    setTimeout(eval(chord_funcs[3]), 7210);
+    setTimeout(man_click, 9585);
   event.preventDefault();
 }
 start_playing.addEventListener("click", play_chords, true);
+
+var stop_playing = document.getElementById("refresh");
+function refresh() {
+  location.reload();
+}
+stop_playing.addEventListener("click", refresh, true);

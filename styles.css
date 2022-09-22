@@ -27,7 +27,7 @@
 }
 
 #page-title {
-    font-size:8vh;
+    font-size:50px;
 }
 
 .piano{
@@ -51,7 +51,7 @@
 }
 
 #home-page {
-    padding: 170px;
+    padding: 200px;
 }
 
 #the-form {
@@ -79,6 +79,10 @@
     padding-top: 10px;
 }
 
+.buttons_here {
+    font-family: monospace;
+}
+
 .button {
     background-color: aliceblue;
     outline: black;
@@ -102,6 +106,7 @@
 body{
     background-image: url('https://c.tenor.com/CCky8rHzIecAAAAd/80s-vaporwave.gifhttp://i.stack.imgur.com/kx8MT.gif');
     background-size: cover;
+    background-position:left;
     
     
     
