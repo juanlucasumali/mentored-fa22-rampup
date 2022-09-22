@@ -274,11 +274,11 @@ function man_click() {
 var start_playing = document.getElementById("play-chords");
 function play_chords(event) {
   start_playing.removeEventListener("click", play_chords, true);
-    setTimeout(eval(chord_funcs[0]), 5);
-    setTimeout(eval(chord_funcs[1]), 2400);
-    setTimeout(eval(chord_funcs[2]), 4805);
+    setTimeout(eval(chord_funcs[0]), 1);
+    setTimeout(eval(chord_funcs[1]), 2424);
+    setTimeout(eval(chord_funcs[2]), 4810);
     setTimeout(eval(chord_funcs[3]), 7210);
-    setTimeout(man_click, 9585);
+    setTimeout(man_click, 9588);
   event.preventDefault();
 }
 start_playing.addEventListener("click", play_chords, true);
