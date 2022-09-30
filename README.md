@@ -1,5 +1,5 @@
 # Chord Progression Generator 3000!
-![This is an image](https://imgur.com/NjdUKDx)
+![This is an image](https://i.imgur.com/wmSwz4k.png)
 <br/>(Depicted: A screenshot of the website!)
 
 <br/>
