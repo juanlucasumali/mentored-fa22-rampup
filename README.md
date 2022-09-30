@@ -31,4 +31,4 @@ Introducing: The Chord Progression Generator 3000! As a student double majoring 
 <br/>
 
 > ## 🔭 Conclusion
-Overall, had a lot of fun creating my first website with 
+Overall, had a lot of fun creating my first website with the added bonus of incorporating my two biggest passions in this world! In the future, I'd like to explore the world of generative music, and how to create a website that can take in user inputs to produce the chord progressions for a complete song, complete with intros, verses, bridges, choruses, etc.
