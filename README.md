@@ -5,7 +5,8 @@
 <br/>
 
 > ## 🔗 Link
-[https://juanlucasumali.github.io/chord-progression-generator-3000/](https://juanlucasumali.github.io/chord-progression-generator-3000/)
+<a href="https://juanlucasumali.github.io/chord-progression-generator-3000/" target="_blank">[external link](https://juanlucasumali.github.io/chord-progression-generator-3000/)</a>
+
 
 > ## 🤔 Purpose
 Introducing: The Chord Progression Generator 3000! As a student double majoring in Computer Science and Music, I've always wanted to work on a project that would marry both these passions of mine — and that's exactly what this is! Why a chord progression generator specifically? Well, during the songwriting process, coming up with the just the right progression is what I struggle with the most. So, I built something that does it for me. 
