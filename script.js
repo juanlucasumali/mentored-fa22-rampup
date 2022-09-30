@@ -55,7 +55,7 @@ var scales_dict = {
 var chords_dict = {
   "key-of-c":["C", "D", "E", "F", "G", "A", "B"],
   "key-of-c#/db":["Db", "Eb", "Fb", "Gb", "Ab", "Bb", "Cb"],
-  "key-of-d":["D", "E", "F#", "G", "A", "B", "Db"],
+  "key-of-d":["D", "E", "Gb", "G", "A", "B", "Db"],
   "key-of-d#/eb":["Eb", "F", "G", "Ab", "Bb", "C", "D"],
   "key-of-e":["E", "Gb", "Ab", "A", "B", "Db", "Eb"],
   "key-of-f":["F", "G", "A", "Bb", "C", "D", "E"],
