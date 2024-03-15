@@ -10,7 +10,7 @@
 <br/>
 
 > ## 🤔 About
-Introducing: The Chord Progression Generator 3000! As a student double majoring in Computer Science and Music, I've always wanted to work on a project that would marry both these passions of mine — and that's exactly what this is! Why a chord progression generator specifically? Well, during the songwriting process, designing just the right chord progression is what I struggle with the most. So, with the help of HTML, CSS, and JavacSript, I built something that designs it for me instead!
+Introducing: The Chord Progression Generator 3000! As a someone passionate in both **coding and music**, I've always wanted to work on a project that would **marry both these passions of mine** — and that's exactly what this is! Why a chord progression generator specifically? Well, during the songwriting process, designing just the right chord progression is what I struggle with the most. So, with the help of HTML, CSS, and JavacSript, I built something that designs it for me instead!
 
 <br/>
 
@@ -33,4 +33,4 @@ Introducing: The Chord Progression Generator 3000! As a student double majoring 
 <br/>
 
 > ## 🔭 Conclusion
-Overall, had a lot of fun creating my first website with the added bonus of incorporating my two biggest passions in this world! In the future, I'd like to explore the world of generative music, and how to create a website that can take in user inputs to produce the chord progressions for a complete song, complete with intros, verses, bridges, choruses, etc.
+Overall, had a lot of fun creating my first website with the added bonus of incorporating my two biggest passions in this world! In the future, I'd like to explore the world of **generative music**, and how to create a website that can take in user inputs to produce the chord progressions for a complete song, complete with intros, verses, bridges, choruses, etc.
